@@ -1,10 +1,10 @@
 ﻿pytz
 emoji
 ujson
-bs4==0.0.1
-mega.py==1.0.1
-Telethon==1.24.0
-progressbar==2.5
-youtube-dl==2021.6.6
-multivolumefile==0.2.3
-pyTelegramBotAPI==4.3.1
+bs4
+mega.py
+Telethon
+progressbar
+youtube-dl
+multivolumefile
+pyTelegramBotAPI
