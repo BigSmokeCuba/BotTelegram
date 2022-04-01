@@ -237,6 +237,19 @@ async def upload_to_moodle_url(msg, bot, ev, url):
         multiFile.files.clear()
     pass
 
+def sendTxt(name,files,update,bot):
+                txt = open(name,'w')
+                fi = 0
+                for f in files:
+                    separator = ''
+                    if fi < len(files)-1:
+                        separator += '\n'
+                    txt.write(f['directurl']+separator)
+                    fi += 1
+                txt.close()
+                bot.sendFile(update.message.chat.id,name)
+                os.unlink(name)
+
 
 # PROCESO DE DESCARGA DE ARCHIVOS
 async def dll(ev, bot, msg):
